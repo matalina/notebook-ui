@@ -1,0 +1,40 @@
+html {
+    @include outer-container;
+}
+
+body {
+    @include fill-parent();
+    @include row(table);
+    
+    margin: 0px;
+}
+
+#content {
+    @include span-columns(9);
+    @include pad();
+    @include omega() ;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    background: #ccc;
+}
+
+nav {
+    @include span-columns(3);
+    @include pad();
+    
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    overflow-y: scroll;
+    
+    background: #eee;
+}
+
+ul ul, ul ol, ol ol, ol ul, {
+    margin-left: 20px;
+}

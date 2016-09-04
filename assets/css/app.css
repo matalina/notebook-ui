@@ -3263,3 +3263,53 @@ hr {
   border-top: 0;
   margin: 1.5em 0;
 }
+
+html {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+body {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin: 0px;
+}
+
+#content {
+  display: table-cell;
+  width: 75%;
+  padding: 2.3576520234%;
+  margin-right: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #ccc;
+}
+
+nav {
+  display: table-cell;
+  width: 25%;
+  padding: 2.3576520234%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background: #eee;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-left: 20px;
+}
